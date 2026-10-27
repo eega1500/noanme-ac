@@ -1,0 +1,976 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Customer & Account API Security Lab",
+    "version": "1.0.0",
+    "description": "OpenAPI inventory for the included training backend. Synthetic data only; use in an authorized lab."
+  },
+  "servers": [
+    {
+      "url": "https://REPLACE-WITH-YOUR-RENDER-URL",
+      "description": "Replace with the actual Render-assigned service root URL."
+    }
+  ],
+  "paths": {
+    "/identity/auth/login": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Log in",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/identity/auth/refresh": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Refresh token",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/identity/auth/logout": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Log out",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/identity/users": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Register user",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/identity/users/me": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Get current user",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/identity/users/{userId}": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Get user by ID",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "patch": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Update user",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/accounts/{accountId}": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Get account",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/accounts/{accountId}/transactions": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "List transactions",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/accounts/{accountId}/transfer": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Simulate transfer",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/orders/{orderId}": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Get order",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/orders": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "List orders",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Create simulated order",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/coupons/{couponCode}/redeem": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Redeem coupon",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "couponCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "List products",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/products/{productId}": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Get product",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/search": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Search catalog",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/search/filters": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Filter catalog",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/webhooks/validate": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Validate webhook URL (simulation)",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/files": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Upload metadata (simulation)",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/files/{fileId}": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Download metadata",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "fileId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/documents/preview": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Preview document (simulation)",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/imports/xml": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Import XML (simulation)",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/diagnostics/health": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Detailed health status",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/diagnostics/config": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Diagnostic configuration",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/reports/export": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Export report",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/tenants/{tenantId}/settings": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Get tenant settings",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "tenantId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/batch": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Batch operation (no work executed)",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/legacy/v1/customers": {
+      "get": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Legacy customer endpoint",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/comments": {
+      "post": {
+        "tags": [
+          "Training Lab"
+        ],
+        "summary": "Create comment",
+        "description": "Intentionally weak training behavior using synthetic data. Authorized isolated lab only.",
+        "responses": {
+          "200": {
+            "description": "Demo response"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}

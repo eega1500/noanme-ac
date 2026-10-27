@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: noname-api-security-lab
+    runtime: docker
+    plan: starter
+    healthCheckPath: /
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
